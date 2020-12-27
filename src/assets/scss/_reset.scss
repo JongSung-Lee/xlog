@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+    border: 0;
+}
+
+body {
+  min-width: 1280px;
+  font-family: $font-stack;
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.025em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  overflow:visible;
+  margin:0;
+  padding:0;
+  border:none;
+  background:none; 
+  font-family: $font-stack;
+  font-weight: $font-normal;
+  font-size: 14px;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  border:0;
+  padding:0;
+}
+
+a {
+  text-decoration:none;
+  word-wrap:break-word;
+  word-break:keep-all;
+}
+a:link, a:visited, a:hover, a:active {text-decoration:none;}
+
+ul,
+ol {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  appearance: none;
+}
+
+/* 네이티브 외형 감추기 */
+select::-ms-expand {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0;
+  font-weight: $font-normal;
+}
+
+legend,
+caption {
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -20000px;
+}
