@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "immutable": "^4.0.0-rc.12",
+    "immutable": "3.8.2",
+    "node-sass": "4.14",
     "react": "16.5.2",
     "react-data-grid": "5.0.1",
     "react-dom": "16.5.2",

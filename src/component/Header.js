@@ -3,6 +3,7 @@ import main_logo from '../assets/images/img_main_logo.png';
 import ico_check_on from '../assets/images/ico_check_on.png';
 import ico_profile from '../assets/images/ico_profile.png';
 import ico_question from '../assets/images/ico_question.png';
+import '../assets/scss/app.scss';
 
 const Header = () => {
     return(

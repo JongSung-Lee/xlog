@@ -1,9 +1,6 @@
 import React from "react";
 import ReactDataGrid from "react-data-grid";
 
-
-
-
 const columns = [
   { key: "id", name: "NO", editable: true },
   { key: "SystemName", name: "시스템명", editable: true },
@@ -43,7 +40,7 @@ class SimpleGrid extends React.Component {
 
   render() {
     return (
-      <div className="contents">
+          <div className="cont">
             <div className="inner">
                 <div className="top_title_box">
                     <h3>시스템 정보관리 <span>총 10건이 검색되었습니다.</span></h3>
@@ -102,13 +99,11 @@ class SimpleGrid extends React.Component {
                     </div>
                 </div>
             </div>
-
-            <div className="event_box">
-                <i className="i_event"></i>DDL 이벤트가 발생하였습니다
-            </div>
+          
+          </div>
+            
 
             
-        </div>
                
 
     );
