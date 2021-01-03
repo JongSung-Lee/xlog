@@ -32,7 +32,7 @@ const Login = () => {
             </div>
 
             <div className="btn_area">
-            <Link to ='/main' ><button className="btn">로그인</button></Link>  
+            <Link to ='/SystmeInfoMain' ><button className="btn">로그인</button></Link>  
             </div>
         </div>
     </div>

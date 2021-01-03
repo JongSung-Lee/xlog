@@ -11,13 +11,13 @@ const Header = () => {
     <div>
 
     <header>
-        <h1><a href="javascript:void(0);"><img src={main_logo} alt="X-LOG"/></a></h1>
+        <h1><link><img src={main_logo} alt="X-LOG"/></link></h1>
 
         <nav className="gnb">
             <ul>
-                <li><a href="javascript:void(0);"><img src={ico_check_on} alt=""/>정책관리</a></li>
-                <li><a href="javascript:void(0);"><img src={ico_profile} alt=""/>사용자관리</a></li>
-                <li><a href="javascript:void(0);"><img src={ico_question} alt=""/>도움말</a></li>
+                <li><link><img src={ico_check_on} alt=""/>정책관리</link></li>
+                <li><link><img src={ico_profile} alt=""/>사용자관리</link></li>
+                <li><link><img src={ico_question} alt=""/>도움말</link></li>
             </ul>
         </nav>
         <div className="my_info">
