@@ -4,6 +4,7 @@ import ico_check_on from '../assets/images/ico_check_on.png';
 import ico_profile from '../assets/images/ico_profile.png';
 import ico_question from '../assets/images/ico_question.png';
 import '../assets/scss/app.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return(
@@ -11,13 +12,13 @@ const Header = () => {
     <div>
 
     <header>
-        <h1><link><img src={main_logo} alt="X-LOG"/></link></h1>
+        <h1><Link><img src={main_logo} alt="X-LOG"/></Link></h1>
 
         <nav className="gnb">
             <ul>
-                <li><link><img src={ico_check_on} alt=""/>정책관리</link></li>
-                <li><link><img src={ico_profile} alt=""/>사용자관리</link></li>
-                <li><link><img src={ico_question} alt=""/>도움말</link></li>
+                <li><Link><img src={ico_check_on} alt=""/>정책관리</Link></li>
+                <li><Link><img src={ico_profile} alt=""/>사용자관리</Link></li>
+                <li><Link><img src={ico_question} alt=""/>도움말</Link></li>
             </ul>
         </nav>
         <div className="my_info">

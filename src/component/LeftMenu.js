@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 
 const LeftMenu = () => {
     return(
@@ -8,47 +8,47 @@ const LeftMenu = () => {
             <div className="inner">
                 <ul className="depth1">
                     <li className="on">
-                        <link>시스템 정보관리</link>
+                        <Link>시스템 정보관리</Link>
                         <ul className="depth2" style={{display: "block" }}>
-                            <li><link className="on">svr_20</link></li>
-                            <li><link>TAR_server_31</link></li>
-                            <li><link>SRC_server</link></li>
+                            <li><Link className="on">svr_20</Link></li>
+                            <li><Link>TAR_server_31</Link></li>
+                            <li><Link>SRC_server</Link></li>
                         </ul>
                     </li>
                     <li>
-                        <link>DBMS 정보관리</link>
+                        <Link>DBMS 정보관리</Link>
                         <ul className="depth2">
-                            <li><link className="on">2-1</link></li>
-                            <li><link>2-2</link></li>
-                            <li><link>2-3</link></li>
-                            <li><link>2-4</link></li>
+                            <li><Link className="on">2-1</Link></li>
+                            <li><Link>2-2</Link></li>
+                            <li><Link>2-3</Link></li>
+                            <li><Link>2-4</Link></li>
                         </ul>
                     </li>
                     <li>
-                        <link>정책관리</link>
+                        <Link>정책관리</Link>
                         <ul className="depth2">
-                            <li><link className="on">3-1</link></li>
-                            <li><link>3-2</link></li>
-                            <li><link>3-3</link></li>
-                            <li><link>3-4</link></li>
+                            <li><Link className="on">3-1</Link></li>
+                            <li><Link>3-2</Link></li>
+                            <li><Link>3-3</Link></li>
+                            <li><Link>3-4</Link></li>
                         </ul>
                     </li>
                     <li>
-                        <link>모니터링</link>
+                        <Link>모니터링</Link>
                         <ul className="depth2">
-                            <li><link className="on">4-1</link></li>
-                            <li><link>4-2</link></li>
-                            <li><link>4-3</link></li>
-                            <li><link>4-4</link></li>
+                            <li><Link className="on">4-1</Link></li>
+                            <li><Link>4-2</Link></li>
+                            <li><Link>4-3</Link></li>
+                            <li><Link>4-4</Link></li>
                         </ul>
                     </li>
                     <li>
-                        <link>보고서</link>
+                        <Link>보고서</Link>
                         <ul className="depth2">
-                            <li><link className="on">5-1</link></li>
-                            <li><link>5-2</link></li>
-                            <li><link>5-3</link></li>
-                            <li><link>5-4</link></li>
+                            <li><Link className="on">5-1</Link></li>
+                            <li><Link>5-2</Link></li>
+                            <li><Link>5-3</Link></li>
+                            <li><Link>5-4</Link></li>
                         </ul>
                     </li>
                 </ul>
