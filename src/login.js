@@ -24,7 +24,7 @@ const Login = () => {
             </div>
 
             <div className="info_area">
-                <Link to ='/main' className="btn_txt">아이디/비밀번호 찾기</Link>
+                <Link to ='/SystmeInfoMain' className="btn_txt">아이디/비밀번호 찾기</Link>
                 <div className="round_chk">
                     <input type="checkbox" id="chk1"/>
                     <label for="chk1">로그인 상태 유지</label>
