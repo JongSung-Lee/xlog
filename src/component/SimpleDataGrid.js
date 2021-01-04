@@ -56,6 +56,7 @@ class SimpleGrid extends React.Component {
         columns={columns}
         rowGetter={i => this.state.rows[i]}
         rowsCount={10}
+        rowHeight={40} //height 설정 추가
         onGridRowsUpdated={this.onGridRowsUpdated}
         enableCellSelect={true}
         rowSelection={{
