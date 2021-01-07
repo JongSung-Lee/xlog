@@ -137,6 +137,7 @@ header {
   padding: 0 28px 0 10px;
   background: linear-gradient(92deg, #7673bf, #2b2871);
   min-height: 63px;
+  background-color: black;
 }
 
 header h1, header .gnb {
@@ -366,8 +367,12 @@ header:after {
   overflow: hidden;
 }
 
+.container .contents .cont {
+  height: calc(100vh - 131px);
+}
+
 .container .contents .inner {
-  height: 33.5%;
+  height: 36%;
   overflow-y: auto;
 }
 
@@ -861,7 +866,9 @@ input[type=checkbox]:not(old) {
 }
 
 .event_box {
-  position: relative;
+  position: fixed;
+  bottom: 16px;
+  width: calc(100% - 305px);
   padding: 14px 30px;
   font-size: 16px;
   font-weight: 700;
@@ -875,39 +882,31 @@ input[type=checkbox]:not(old) {
           box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
-.basic_tbl table thead th {
-  padding: 10px 20px;
-  color: #7d86a9;
+.basic_tbl .react-grid-Grid {
+  border: none;
+  outline: none;
+}
+
+.basic_tbl .rdg-last--frozen,
+.basic_tbl .react-grid-HeaderCell--frozen:last-of-type {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.basic_tbl .react-grid-HeaderCell {
   background: #f1f3f5;
+  color: #7d86a9;
+  font-weight: 300;
+  border-right: none;
   border-bottom: 1px solid #e9ecef;
-  text-align: left;
 }
 
-.basic_tbl table tbody tr:first-child td {
-  border-top: none;
-}
-
-.basic_tbl table tbody tr:nth-child(odd) td {
-  background: #fff;
-}
-
-.basic_tbl table tbody tr:nth-child(even) td {
-  background: #f8f9fa;
-}
-
-.basic_tbl table tbody td {
-  padding: 10px 20px;
+.basic_tbl .react-grid-Cell__value {
   font-weight: 700;
   color: #343a40;
-  border-top: 1px solid #e9ecef;
-  text-align: left;
 }
 
-.basic_tbl table tbody td:first-child {
-  padding-left: 30px;
-  text-align: center;
-}
-
-.basic_tbl table tbody td .round_chk {
-  line-height: 1;
+.basic_tbl .react-grid-Cell {
+  border-right: none;
+  border-bottom: 1px solid #e9ecef;
 }
