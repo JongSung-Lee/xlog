@@ -14,6 +14,7 @@ $(document).ready(function(){
     });
 });
 
+// tab
 var tabList = document.querySelectorAll('.tab_btn_area li')
 Array.prototype.forEach.call(tabList, function(list) {
     list.children[0].addEventListener('click', function(e) {
