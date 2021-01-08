@@ -1,18 +1,16 @@
-$(document).ready(function(){
-    $('.lnb .depth1 li').on('click', function(){
-        var $self = $(this);
-        var $depth2 = $self.find('.depth2');
-        var $liOn = $('.lnb .depth1 li.on');
-        $liOn.removeClass('on');
-        $liOn.find('.depth2').css({
-            'display': 'none'
-        });
-        $self.addClass('on');
-        $depth2.animate({
-            'height': 'toggle'
-        }, 250);
-    });
-});
+// lnb
+var lnb = document.querySelectorAll('.lnb .depth1 > li > a');
+for (i = 0; i < lnb.length; i++) { 
+    lnb[i].addEventListener('click', function() { 
+        this.parentNode.classList.toggle('on');
+        var panel = this.nextElementSibling;
+        if (panel.style.display === 'block') { 
+            panel.style.display = 'none'; 
+        } else { 
+            panel.style.display = 'block'; 
+        }
+    }); 
+}
 
 // tab
 var tabList = document.querySelectorAll('.tab_btn_area li')
