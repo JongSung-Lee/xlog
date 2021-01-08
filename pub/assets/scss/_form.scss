@@ -1,13 +1,15 @@
 @charset "UTF-8";
 
 input, textarea, select {
-    -webkit-appearance:none;
-    margin:0; 
-    padding:0; 
-    -webkit-border-radius:0; 
-    border-radius:0; 
-    outline-style:none; 
-    border:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+    padding: 0; 
+    -webkit-border-radius: 0; 
+    border-radius: 0; 
+    outline-style: none; 
+    border: none;
     font-family: $font-stack;
 }
 
@@ -51,7 +53,12 @@ input, textarea, select {
         min-width: 100px;
         min-height: 40px;
         line-height: 40px;
+        padding-left: 10px;
         color: #7d86a9;
+        strong {
+            margin-left: 4px;
+            color: #ff1717;
+        }
     }
     input[type="text"],
     input[type="email"],
@@ -79,8 +86,39 @@ input, textarea, select {
     }
     input[readonly]{
         color: rgb(173, 181, 189);
-        background: rgb(248, 249,250); 
+        background: #e9ecef; 
     }
+    .select_box {
+        display: inline-block;
+        position: relative;
+        min-width: calc(100% - 100px);
+        select {
+            display: inline-block;
+            width: 100%;
+            min-height: 40px;
+            padding: 9px 34px 9px 10px;
+            background: #fff;
+            border: 1px solid #dee2e6;
+            color: #000;
+            border-radius: 0px;
+            &::-ms-expand {
+                display: none;
+            }
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: calc(50% - 3px);
+            right: 16px;
+            width: 0;
+            height: 0;
+            border-top: 6px solid #cecece;
+            border-right: 6px solid transparent;
+            border-left: 6px solid  transparent;
+        }
+    }
+    
     &.btr {
         position: relative;
         .btn {
@@ -155,7 +193,7 @@ input[type=checkbox]:not(old) {
     }
     &.square {
         border-radius: 0;
-        background: #495057;
+        background: #005bff;
         font-size: 14px;
         padding: 0 30px;
     }
@@ -211,6 +249,54 @@ input[type=checkbox]:not(old) {
     height: 20px;
     margin-top: -10px;
     background: url(../images/ico_event.png) no-repeat;
+}
+
+.form_box {
+    display: flex;
+    position: relative;
+    .btn_box {
+        margin: 10px 0 10px 100px;
+    }
+    > div + div.w600 {
+        margin-left: 90px;
+    }
+    .sub_txt {
+        margin-top: -10px;
+        margin-bottom: 20px;
+        color: #3f3f3f;
+    }
+}
+// list_box
+.list_box {
+    width: 45%;
+    &:first-child {
+        margin-right: 10%;
+    }
+    h5 {
+        padding: 0 0 10px 10px;
+        font-size: 14px;
+        font-weight: $font-normal;
+        color: #7d86a9;
+        strong {
+            margin-left: 4px;
+            color: #ff1717;
+        }
+    }
+    .basic_tbl {
+        min-height: 290px;
+        background: #fff;
+        border: 1px solid #e9ecef;
+        box-shadow: none;
+    }
+    & + .btn_box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55px, 0);
+        width: 110px;
+        margin: 0;
+        text-align: center;
+    }
 }
 
 .event_box {

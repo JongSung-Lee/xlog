@@ -1,0 +1,42 @@
+.tab_btn_area {
+    display: flex;
+    li {
+        position: relative;
+        min-width: 120px;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0 13px;
+            text-align: center;
+            font-weight: $font-bold;
+            color: #adb5bd;
+        }
+        &.on {
+            a {
+                color: #343a40;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 13px;
+                    bottom: -23px;
+                    display: block;
+                    width: calc(100% - 26px);
+                    height: 4px;
+                    background: #343a40;
+                }
+            }
+        }
+    }
+}
+.tab_cont_area {
+    .tab_cont {
+        .form_box {
+            padding: 20px 0;
+            border-top: 1px solid #ced4da;
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

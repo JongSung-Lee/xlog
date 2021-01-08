@@ -13,3 +13,20 @@ $(document).ready(function(){
         }, 250);
     });
 });
+
+var tabList = document.querySelectorAll('.tab_btn_area li')
+Array.prototype.forEach.call(tabList, function(list) {
+    list.children[0].addEventListener('click', function(e) {
+        e.preventDefault()
+        var tabContent = document.querySelectorAll('.tab_cont_area .tab_cont')
+        var tabNum = this.parentElement.getAttribute('data-tabnum')
+        Array.prototype.forEach.call(tabContent, function(cont, i) {
+            cont.style.display = 'none'
+            tabList[i].className = ''
+        })
+        tabContent[tabNum].style.display = 'block'
+        if(list.className.indexOf('on') == -1) {
+            list.className = 'on'
+        }
+    })
+})
