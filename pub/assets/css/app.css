@@ -1056,6 +1056,10 @@ input[type=checkbox]:not(old) {
   background: #343a40;
 }
 
+.tab_cont_area .tab_cont {
+  display: none;
+}
+
 .tab_cont_area .tab_cont .form_box {
   padding: 20px 0;
   border-top: 1px solid #ced4da;
